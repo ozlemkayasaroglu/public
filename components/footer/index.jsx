@@ -104,7 +104,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">Follow Us</h3>
+                <h3 className="text-sm font-semibold leading-6 text-gray-900">Follow us</h3>
                 <ul role="list" className="mt-6 space-y-4">
               {navigation.social.map((item) => (
                 <li key={item.name}>

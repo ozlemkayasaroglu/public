@@ -7,7 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { Dialog, Popover, Transition } from "@headlessui/react";
-import Banner from "./banner";
+
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12 items-center">
             <Link
-              href="#"
+              href="/"
               className="text-sm font-semibold leading-6 text-gray-600"
             >
               HOME
@@ -107,14 +107,14 @@ const Header = () => {
               ABOUT US
             </Link>
             <Link
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-600"
+              href="./contact"
+              className="text-sm font-semibold leading-6 text-gray-600 hover:text-teal-400"
             >
               CONTACT
             </Link>
             <Link
               href="#"
-              className="text-sm font-semibold leading-6 text-gray-600 bg-[#2dd5c9] px-3 py-1"
+              className="text-sm font-semibold leading-6 text-gray-600 bg-[#2dd5c9] px-3 py-1 "
             >
               +90 212 919 05 55
             </Link>
@@ -167,7 +167,7 @@ const Header = () => {
                       ABOUT US
                     </Link>
                     <Link
-                      href="#"
+                      href="/contact"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       CONTACT
@@ -179,7 +179,7 @@ const Header = () => {
           </Dialog.Panel>
         </Dialog>
       </header>
-    <Banner />
+
     </div>
   );
 };

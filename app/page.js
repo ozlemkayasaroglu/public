@@ -1,6 +1,7 @@
 "use client";
 import Blog from "@/components/blog/blog";
 import { useEffect, useState } from "react";
+import Banner from "@/components/header/banner";
 
 export default function Home() {
   const [quote, setQuote] = useState([]);
@@ -33,7 +34,9 @@ export default function Home() {
 
   return (
     <div>
+          <Banner />
       <Blog />
+        
     </div>
   );
 }
